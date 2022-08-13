@@ -23,6 +23,12 @@ const TabNavigator = () => {
           <Ionicons name="home" color={color} size={size} />
         ),
       }}/>
+      <Tab.Screen name="Log" component={Report} options={{
+        tabBarLabel: 'Log',
+        tabBarIcon: ({ color, size }) => (
+          <Ionicons name="list" color={color} size={size} />
+        ),
+      }}/>
     </Tab.Navigator>
   );
 };
